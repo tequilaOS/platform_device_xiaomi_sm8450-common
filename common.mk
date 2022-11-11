@@ -300,6 +300,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-V1-ndk_platform.vendor
 
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
