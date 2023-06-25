@@ -90,3 +90,4 @@ service touch_report /vendor/bin/touch_report
     group system uhid input
     capabilities SYS_NICE
     ioprio rt 4
+    seclabel u:r:touchreport:s0

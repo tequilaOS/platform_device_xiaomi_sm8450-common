@@ -2450,6 +2450,7 @@ vendor/lib64/libtime_genoff.so
 
 # Touchscreen
 vendor/bin/touch_report
+vendor/bin/touch_report:recovery/root/vendor/bin/touch_report
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
