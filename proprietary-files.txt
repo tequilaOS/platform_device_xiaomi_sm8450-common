@@ -1,3 +1,5 @@
+# All unpinned blobs are extracted from zeus V14.0.7.0.TLBMIXM
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/audioadsprpcd
