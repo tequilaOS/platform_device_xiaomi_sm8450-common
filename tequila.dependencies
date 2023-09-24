@@ -5,6 +5,18 @@
     "remote": "tequila-gitlab"
   },
   {
+    "repository": "platform_kernel_xiaomi_sm8450",
+    "target_path": "kernel/xiaomi/sm8450"
+  },
+  {
+    "repository": "platform_kernel_xiaomi_sm8450-devicetrees",
+    "target_path": "kernel/xiaomi/sm8450-devicetrees"
+  },
+  {
+    "repository": "platform_kernel_xiaomi_sm8450-modules",
+    "target_path": "kernel/xiaomi/sm8450-modules"
+  },
+  {
     "repository": "platform_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
   }
