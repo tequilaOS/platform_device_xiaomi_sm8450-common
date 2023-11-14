@@ -68,6 +68,21 @@ function blob_fixup() {
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service-qti)
             ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
+	    ;;
+        vendor/lib64/libgarden.so)
+            "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
+            ;;
+        vendor/lib64/libgarden_haltests_e2e.so)
+            "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
+            ;;
+        vendor/lib/hw/android.hardware.gnss-aidl-impl-qti.so)
+            "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
+            ;;
+        vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so)
+            "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
+            ;;
+        vendor/bin/hw/android.hardware.gnss-aidl-service-qti)
+            "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
             ;;
     esac
 }
